@@ -1,1 +1,178 @@
+<div class='adblockInfo'>
+<div class='adblockInfo__container'>
+<div class='adblockInfo__cover'>
+<ul class="bg-bubbles">
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<h3 class='adblockInfo__title'>
+adblock تم الكشف عن مانع الإعلانات </h3>
+<img class='adblockInfo__cover__img' src='https://blockthrough.com/wp-content/uploads/2017/02/Antu_preferences-web-browser-adblock.svg.png'/>
+</ul>
+</div>
+<p class='adblockInfo__text'>
+الإعلانات تساعدنا في تمويل موقعنا، فالمرجو تعطيل مانع الإعلانات وساعدنا في تقديم محتوى حصري لك.
+شكرًا لك على الدعم ❤️
+</p>
+<div class='bottom'>
+<ul class='ar1web-social' id='ar1web-social'>
+<li><a class='social-tooltip fb' href='#' target='_blank' title='صفحتنا على الفيسبوك'><i class='fa fa-facebook'></i></a></li>
+<li><a class='social-tooltip tw' href='#' target='_blank' title='تابعنا على تويتر'><i class='fa fa-twitter'></i></a></li>
+<li><a class='social-tooltip gp' href='#' target='_blank' title='حسابنا'><i class='fa fa-instagram'></i></a></li>
+<li><a class='social-tooltip yt' href='#' target='_blank' title='اشترك بقناتنا'><i class='fa fa-youtube'></i></a></li>
+</ul>
+<a href='https://raw.githubusercontent.com/ElhadaryHisham/Blogger/master/addons/fuckadblocker' rel='nofollow' target='_blank'><span style='color: #999999;'><span style='font-size: xx-small;'>أحصل على هذه الإضافة في موقعك</span></span></a>
+</div>
+</div>
+</div>
+<style type='text/css'>
+@import url('https://fonts.googleapis.com/css?family=Changa');
 
+@keyframes fadeInUp{0%{opacity:0;-webkit-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px)}100%{opacity:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}}
+@keyframes fadeInDown{0%{opacity:0;-webkit-transform:translateY(-20px);-ms-transform:translateY(-20px);transform:translateY(-20px)}100%{opacity:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}}
+
+.bg-bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;    overflow: hidden;
+}
+.bg-bubbles li {
+  position: absolute;
+  list-style: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.15);
+  bottom: -160px;
+  -webkit-animation: square 25s infinite;
+  animation: square 25s infinite;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+.bg-bubbles li:nth-child(1) {
+  left: 10%;
+}
+.bg-bubbles li:nth-child(2) {
+  left: 20%;
+  width: 80px;
+  height: 80px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 17s;
+          animation-duration: 17s;
+}
+.bg-bubbles li:nth-child(3) {
+  left: 25%;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.bg-bubbles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation-duration: 22s;
+          animation-duration: 22s;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.bg-bubbles li:nth-child(5) {
+  left: 70%;
+}
+.bg-bubbles li:nth-child(6) {
+  left: 80%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.bg-bubbles li:nth-child(7) {
+  left: 32%;
+  width: 160px;
+  height: 160px;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+.bg-bubbles li:nth-child(8) {
+  left: 55%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s;
+}
+.bg-bubbles li:nth-child(9) {
+  left: 0;
+  width: 10px;
+  height: 10px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+@-webkit-keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-700px) rotate(600deg);
+            transform: translateY(-700px) rotate(600deg);
+  }
+}
+@keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-700px) rotate(600deg);
+            transform: translateY(-700px) rotate(600deg);
+  }
+}
+
+.adblockInfo{width:100%;height:100%;position:fixed;top:0;left:0;z-index:900;display:none}
+.adblockInfo.is-active{display:block}
+.adblockInfo__container{top: calc(50% - 40%); max-width: 350px; font-size: 16px; text-align: center; box-shadow: 0 6px 5px -5px rgba(0,0,0,.5); margin: 0 auto;font-family: 'Changa', cursive;    overflow: hidden;}
+.adblockInfo__container{position:relative;z-index:10}
+.adblockInfo__title{padding: 0 1em; font-size: 1.2em; margin: 0; color: #fff; position: absolute; bottom: 50px; background: transparent!important;left:0;right:0}
+.adblockInfo__text{padding: 1em; font-size: 1em; line-height: 2; text-align: center;}
+.adblockInfo__cover__img {width: 50px; max-height: 50%; position: relative; z-index: 99; right: -40%; bottom: -10%;}
+@media (max-width:500px){.adblockInfo__container{left:0;right:0;width:100%}}
+.adblockInfo {
+    background: rgba(0, 0, 0, 0.95); 
+}
+h3.adblockInfo__title { margin-top: 10px; direction: ltr;}
+.adblockInfo__title,
+.adblockInfo__container {
+    background: #fff; 
+}
+.adblockInfo__cover { position: relative; background: #50a3a2;
+  background: -webkit-gradient(linear, left top, right bottom, from(#50a3a2), to(#53e3a6));
+  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);height: 160px; }
+.adblockInfo__text {
+    color: #524e4e; 
+}
+
+
+.bottom { line-height: 3em; }
+.ar1web-social {position: relative; margin: 0 auto; padding: 0 0 0 0;} .ar1web-social li { display: inline-block; margin:0; line-height: 16px; }.ar1web-social li a { color:#fff; position: relative; z-index: 98; font-size: 19px; display: block ; text-align: center; } .twitter-icon:before { content:"\f099" } .gpluss-icon:before { content:"\f16d" } .facebook-icon:before { content:"\f09a" } .rss-icon:before { content:"\f09e" } .social-tooltip.tw, .social-tooltip.fb, .social-tooltip.yt, .social-tooltip.rs, .social-tooltip.wp, .social-tooltip.gp { color: #0099CC;padding: 4px 6px; border: 2px solid; border-radius: 50%;} 
+.social-tooltip.tw { color: #44C3F9;} 
+.social-tooltip.wp { color: #5CCC19; } 
+.social-tooltip.gp { color: #c93ce2; }
+.social-tooltip.fb { color: #086A8C;padding: 4px 10px; } .social-tooltip.yt{color: #FF2F37;} .ar1web-social .social-tooltip:hover:after{ top: -36px; background: none repeat scroll 0% 0% #FFF; font-size: 14px; color: #666; content: attr(title); display: block; right: 0px; padding: 5px 15px; position: absolute; white-space: nowrap; border-radius: 3px; box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
+.ar1web-social .social-tooltip:hover { color: #F8A01B;text-decoration: none; }
+}
+</style>
+<script>//<![CDATA[
+function adBlockDetected(){function e(e,c){return e.classList?e.classList.contains(c):!!e.className.match(new RegExp("(\\s|^)"+c+"(\\s|$)"))}function c(c,t){c.classList?c.classList.add(t):e(c,t)||(c.className+=" "+t)}function t(c,t){if(c.classList)c.classList.remove(t);else if(e(c,t)){var o=new RegExp("(\\s|^)"+t+"(\\s|$)");c.className=c.className.replace(o," ")}}var o=document.querySelector(".adblockInfo"),s=document.querySelector(".adblockInfo__close");c(o,"is-active"),s.onclick=function(){t(o,"is-active")}}if("undefined"!=typeof fuckAdBlock||"undefined"!=typeof FuckAdBlock)adBlockDetected();else{var importFAB=document.createElement("script");importFAB.onload=function(){fuckAdBlock.onDetected(adBlockDetected)},importFAB.onerror=function(){adBlockDetected()},importFAB.integrity="sha256-xjwKUY/NgkPjZZBOtOxRYtK20GaqTwUCf7WYCJ1z69w=",importFAB.crossOrigin="anonymous",importFAB.src="https://cdnjs.cloudflare.com/ajax/libs/fuckadblock/3.2.1/fuckadblock.min.js",document.head.appendChild(importFAB)}
+//]]></script>
